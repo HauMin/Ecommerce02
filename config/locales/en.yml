@@ -35,6 +35,12 @@ en:
   cart: "Content Page Cart"
   account: "Content Page Account"
   product: "Content Page Product"
+  category_not_found: "Category Not Found"
+  category_deleted: "Category Deleted"
+  cant_be_empty: "Can not be empty!"
+  updated: "Updated"
+  small_category_not_found: "Small Category Not Found"
+  small_category_deleted: "Small Category Deleted"
   view_admin:
     home:
       title: "Home Admin"
@@ -222,6 +228,7 @@ en:
     str9: "Manage Users"
     str10: "Setting"
     str11: "Logout"
+    str12: "Manage Small Category "
   adminHome:
     str1: "FAshop"
     str2: "Dashboard"
@@ -229,3 +236,64 @@ en:
     str4: "Product total"
     str5: "Order total"
     str6: "More"
+  categories:
+    index:
+      title: "Home Admin"
+      str1: "Category manager"
+      id: "ID"
+      namecategory: "Name Category"
+      description: "Description"
+      action: "Action"
+      new: "New"
+    new:
+      title: "Home Admin"
+      str1: "Add Category"
+      str2: "Create Category"
+      id: "ID"
+      namecategory: "Name Category"
+      description: "Description"
+      list: "List"
+    edit:
+      title: "Home Admin"
+      str1: "Edit Category"
+      str2: "Edit Category"
+      id: "ID"
+      namecategory: "Name Category"
+      description: "Description"
+      list: "List"
+    form:
+      submit: "Submit"
+      namecategory: "Name Category"
+      description: "Description"
+  small_categories:
+    index:
+      title: "Home Admin"
+      str1: "Small Category manager"
+      id: "ID"
+      namecategory: "Name Category"
+      description: "Description"
+      category: "Category"
+      action: "Action"
+      new: "New"
+    new:
+      title: "Home Admin"
+      str1: "Add Small Category"
+      str2: "Create Small Category"
+      id: "ID"
+      namecategory: "Name Category"
+      description: "Description"
+      list: "List"
+      namecategory: "Name Category"
+    edit:
+      title: "Home Admin"
+      str1: "Edit Category"
+      str2: "Edit Category"
+      id: "ID"
+      namecategory: "Name Category"
+      description: "Description"
+      list: "List"
+    form:
+      submit: "Submit"
+      namesmallcategory: "Name Small Category"
+      description: "Description"
+

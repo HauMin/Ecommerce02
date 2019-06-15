@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   get "view_web/account/register", to: "view_web#register"
   get "view_web/account", to: "view_web#account"
   get "view_web/cart", to: "view_web#cart"
+
+  resources :categories
+  resources :small_categories
 end
