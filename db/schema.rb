@@ -21,14 +21,14 @@ ActiveRecord::Schema.define(version: 2019_06_12_032431) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
-    t.bigint "users_id"
-    t.bigint "products_id"
+    t.bigint "user_id"
+    t.bigint "product_id"
     t.bigint "person_post_new_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["person_post_new_id"], name: "index_comments_on_person_post_new_id"
-    t.index ["products_id"], name: "index_comments_on_products_id"
-    t.index ["users_id"], name: "index_comments_on_users_id"
+    t.index ["product_id"], name: "index_comments_on_product_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -146,8 +146,8 @@ ActiveRecord::Schema.define(version: 2019_06_12_032431) do
   end
 
   add_foreign_key "comments", "person_post_news", column: "person_post_new_id"
-  add_foreign_key "comments", "products", column: "products_id"
-  add_foreign_key "comments", "users", column: "users_id"
+  add_foreign_key "comments", "products"
+  add_foreign_key "comments", "users"
   add_foreign_key "contacts", "users"
   add_foreign_key "histories", "users"
   add_foreign_key "image_products", "products"
