@@ -22,5 +22,11 @@
 # categories = Category.create(name: "TOPS",description: "tops")
 # categories = Category.create(name: "BOTTOMS",description: "bottoms")
 # categories = Category.create(name: "ACCESSORIES",description: "accessories")
-small_categories = SmallCategory.create(small_category_name: "Blouses Shirts",
-  description: "Blouses Shirts")
+# small_categories = SmallCategory.create(small_category_name: "Blouses Shirts",
+#   description: "Blouses Shirts")
+
+users = User.create(name: "Ngo Minh Hau", phone: "0123456789", email: "haumin1201@gmail.com", 
+	address: "Da Nang", password: "123123", role: 1)
+
+users = User.create(name: "Pham Den", phone: "0123456789", email: "denpham1201@gmail.com", 
+	address: "Da Nang", password: "123123", role: 0)
